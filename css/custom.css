@@ -1,0 +1,111 @@
+/*
+Theme Name: Etcnet Solar
+Theme URI: https://etcnet.fi
+Description: Etcetera Networks Solar Theme (Twenty-One Child)
+Author: Etcetera Networks
+Template: twenty-one
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+/* --- 1. FONTTIEN TUONTI --- */
+[span_0](start_span)/* Merriweather (Otsikot) ja Inter (Leipäteksti)[span_0](end_span) */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Inter:wght@300;400;500;600&display=swap');
+
+/* --- 2. VARIAABELIT (Tailwind Stone & Amber) --- */
+:root {
+    /* Ensisijaiset värit (Primary) */
+    --color-brand-primary: #d97706;  [span_1](start_span)/* Amber-600[span_1](end_span) */
+    --color-brand-hover:   #b45309;  [span_2](start_span)/* Amber-700[span_2](end_span) */
+    --color-brand-light:   #fbbf24;  [span_3](start_span)/* Amber-400[span_3](end_span) */
+    
+    /* Taustavärit (Backgrounds) */
+    --bg-body:        #fafaf9; [span_4](start_span)/* Stone-50[span_4](end_span) */
+    --bg-card:        #ffffff; [span_5](start_span)/* White[span_5](end_span) */
+    --bg-dark-header: #1c1917; [span_6](start_span)/* Stone-900[span_6](end_span) */
+    
+    /* Tekstivärit (Typography) */
+    --text-main:      #1c1917; [span_7](start_span)/* Stone-900[span_7](end_span) */
+    --text-muted:     #57534e; [span_8](start_span)/* Stone-600[span_8](end_span) */
+    --text-inverse:   #f5f5f4; [span_9](start_span)/* Stone-100[span_9](end_span) */
+    
+    /* Rajat (Borders) */
+    --border-color:   #e7e5e4; [span_10](start_span)/* Stone-200[span_10](end_span) */
+}
+
+/* --- 3. PERUSTYYLIT (Base Styles) --- */
+
+body {
+    background-color: var(--bg-body) !important; [span_11](start_span)/*[span_11](end_span) */
+    font-family: 'Inter', sans-serif; [span_12](start_span)/*[span_12](end_span) */
+    color: var(--text-main) !important;
+}
+
+/* Otsikot (H1-H6) - Merriweather */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif !important; [span_13](start_span)/*[span_13](end_span) */
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+/* --- 4. HEADER & NAVIGAATIO --- */
+
+/* Yläpalkki (Navbar) tummaksi */
+.header-main, 
+.navbar-main {
+    background-color: var(--bg-dark-header) !important; [span_14](start_span)/*[span_14](end_span) */
+    border-bottom: none;
+}
+
+/* Navigaatiolinkit */
+.navbar-main .navbar-nav .nav-link {
+    color: var(--text-inverse) !important;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-main .navbar-nav .nav-link:hover {
+    color: var(--color-brand-light) !important;
+}
+
+/* Logo - Merriweather Bold */
+.navbar-brand {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: var(--text-inverse) !important;
+}
+
+/* --- 5. KOMPONENTIT --- */
+
+/* Kortit ja Paneelit (Cards & Panels) */
+.card, .panel {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 24px !important; [span_15](start_span)[span_16](start_span)/* Pyöristetyt kulmat 24px[span_15](end_span)[span_16](end_span) */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); [span_17](start_span)/*[span_17](end_span) */
+}
+
+/* Sivupalkki (Sidebar) */
+.card-sidebar {
+    background-color: #ffffff; [span_18](start_span)/*[span_18](end_span) */
+    border-radius: 24px;
+}
+
+/* --- 6. PAINIKKEET (Buttons) --- */
+
+/* Primary Button - Pilleri-muoto */
+.btn-primary {
+    background-color: var(--color-brand-primary) !important;
+    border-color: var(--color-brand-primary) !important;
+    border-radius: 9999px !important; [span_19](start_span)/* Täysi pilleri[span_19](end_span) */
+    padding: 0.75rem 1.5rem; [span_20](start_span)/* Väljät välit[span_20](end_span) */
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+/* Hover-tila */
+.btn-primary:hover {
+    background-color: var(--color-brand-hover) !important;
+    transform: scale(1.05); [span_21](start_span)/* Pieni suurennus[span_21](end_span) */
+    box-shadow: 0 10px 15px -3px rgba(180, 83, 9, 0.3); [span_22](start_span)/*[span_22](end_span) */
+}
