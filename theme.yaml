@@ -4,3 +4,5 @@ name: "Etcnet-solar"
 author: "jouni@etcnet.fi"
 config:
   parent: twenty-one
+colors:
+  mode: "dark" 
