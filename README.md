@@ -1,6 +1,6 @@
 # WHMCS Twenty-One Theme - Dark Mode (Custom CSS)
 
-This is a customized CSS file that transforms the default WHMCS **Twenty-One** theme into a full Dark Mode.
+This is a WHMCS client area, dark mode child theme for Twenty-one. CSS file generated with Gemini 3 Pro.
 
 This solution overrides the default theme colors using the `custom.css` file, meaning it does not require modifying core template files and is persistent through WHMCS updates (as long as the `custom.css` file is preserved).
 
@@ -18,6 +18,9 @@ This stylesheet corrects and darkens the following areas that often remain white
     * Removes white backgrounds from "Why Choose Us" marketing blocks.
     * Fixes the Domain Search background area on the homepage.
     * Darkens the "Breadcrumb" bar (Secondary Header).
+
+## Please contribute
+I don't speak CSS. Please test, fork, fix and contribute.
 
 ## License
 
