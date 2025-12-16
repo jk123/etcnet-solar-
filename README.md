@@ -19,34 +19,6 @@ This stylesheet corrects and darkens the following areas that often remain white
     * Fixes the Domain Search background area on the homepage.
     * Darkens the "Breadcrumb" bar (Secondary Header).
 
-## Installation
-
-1.  Download the `custom.css` file from this repository.
-2.  Log in to your server (via FTP or File Manager).
-3.  Navigate to the directory:
-    ```
-    /path_to_whmcs/templates/twenty-one/css/
-    ```
-4.  Upload the `custom.css` file to this folder.
-    * *Note:* If a `custom.css` file already exists, backup your current file and append the content of this file to the end, or replace it entirely if preferred.
-
-## Usage (Important!)
-
-For the changes to take effect, you **must** clear the WHMCS internal cache. Simply refreshing your browser is usually not enough.
-
-1.  Log in to the WHMCS Admin Area.
-2.  Go to **Utilities** > **System** > **System Cleanup**.
-3.  Click **Go** next to **Empty Template Cache**.
-4.  Clear your browser cache or open your Client Area in an Incognito/Private window to see the changes.
-
-## Troubleshooting
-
-**Problem:** Some boxes are still white.
-**Solution:** Ensure you uploaded the file to the correct folder (`templates/twenty-one/css/`). If you are using a Child Theme, the path might differ. Remember to empty the *Template Cache* from the Admin Area.
-
-**Problem:** The logo is not visible on the dark background.
-**Solution:** The CSS file includes a small fix (`.navbar-brand img`) that adds a small white background/border to the logo. For the best result, we recommend using a light version of your logo (.png or .svg) with a transparent background.
-
 ## License
 
 This project is licensed under the **GNU General Public License v3.0 (GPLv3)**.
