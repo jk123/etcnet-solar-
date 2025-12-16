@@ -1,148 +1,158 @@
-/* --- WHMCS TWENTY-ONE: DARK MODE (CUSTOM CSS) --- */
+/* --- WHMCS Twenty-One Dark Theme Custom CSS --- */
 
-/* 1. GENERAL SETTINGS & BACKGROUNDS */
-body, html, .main-content, section#main-body {
-    background-color: #121212 !important;
-    color: #ffffff !important;
-}
-
-/* 2. FORCE "WHITE" CONTENT BOXES TO DARK */
-/* Overwrites default white background classes used in promo blocks */
-.bg-white, .background-white, .whmcs-market-connect-promo, .content-block {
-    background-color: #1e1e1e !important;
-    color: #ffffff !important;
+/* 1. Yleiset taustat ja tekstit */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
-/* 3. HOMEPAGE DOMAIN SEARCH & BANNERS */
-/* Removes the bright background from the domain checker area */
-.domain-checker-bg, 
-section#home-banner, 
-div.home-content,
-.cms-content {
-    background-color: #121212 !important;
-    background-image: none !important;
-    background: #121212 !important;
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
 }
 
-/* 4. TABLE PAGINATION BUTTONS (Previous / Next) */
-/* Fixes the white buttons on data tables */
-.dataTables_wrapper .dataTables_paginate .paginate_button {
-    background-color: #2d2d2d !important;
-    color: #000000 !important;
-    border: 1px solid #444 !important;
-    border-radius: 4px !important;
-    margin-left: 4px;
-    padding: 6px 12px;
-}
-/* Hover state */
-.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-    background-color: #444 !important;
-    color: #fff !important;
-    border-color: #666 !important;
-}
-/* Current page state */
-.dataTables_wrapper .dataTables_paginate .paginate_button.current {
-    background-color: #0056b3 !important;
-    color: #fff !important;
-    border-color: #0056b3 !important;
-}
-/* Disabled state */
-.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
-    background-color: #1a1a1a !important;
-    color: #444 !important;
-    border-color: #333 !important;
+a {
+    color: #5bc0de; /* Vaaleampi sininen linkkeihin */
 }
 
-/* 5. SECONDARY HEADER (Breadcrumbs) */
-/* Darkens the gray bar below the main navigation */
-section#main-body header, 
-div.header-lined, 
-.breadcrumb {
-    background-color: #1f1f1f !important;
-    border-bottom: 1px solid #333 !important;
-    margin-bottom: 0 !important;
-}
-.breadcrumb-item, .breadcrumb-item a {
-    color: #bbb !important;
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
 }
 
-/* 6. MAIN HEADER & NAVIGATION */
-section#header, header, .navbar-main, .navbar-light {
-    background-color: #1f1f1f !important;
-    border-bottom: 1px solid #333 !important;
-}
-.navbar-light .navbar-nav .nav-link, 
-.navbar-light .navbar-brand {
-    color: #fff !important;
+/* 2. Kortit (Cards) ja paneelit */
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
 }
 
-/* 7. TABLES & LISTS */
-.table-container, .table-responsive {
-    background-color: #1e1e1e !important;
-    border: 1px solid #333 !important;
-}
-table.table {
-    background-color: #1e1e1e !important;
-    color: #ddd !important;
-}
-table.table thead th {
-    background-color: #252525 !important;
-    color: #fff !important;
-    border-bottom: 2px solid #444 !important;
-}
-table.table tbody td {
-    background-color: #1e1e1e !important;
-    color: #ccc !important;
-    border-top: 1px solid #333 !important;
-}
-table.dataTable tbody tr.odd, table.dataTable tbody tr.even {
-    background-color: #1e1e1e !important;
+.card-header, .card-footer {
+    background-color: #252525;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
 }
 
-/* 8. CARDS, TILES & FORMS */
-.card, .panel, .tile, .well {
-    background-color: #1e1e1e !important;
-    border: 1px solid #333 !important;
-}
-.card-header, .panel-heading {
-    background-color: #252525 !important;
-    color: #fff !important;
-    border-bottom: 1px solid #333 !important;
-}
-.card-body, .panel-body, .list-group-item {
-    background-color: #1e1e1e !important;
-    color: #ccc !important;
-    border-color: #333 !important;
-}
-.form-control, input, select {
-    background-color: #2d2d2d !important;
-    border: 1px solid #444 !important;
-    color: #fff !important;
-}
-/* Search filter above tables */
-div.dataTables_wrapper .dataTables_filter input {
-    background-color: #2d2d2d !important;
-    color: #fff !important;
-    border: 1px solid #555 !important;
+.card-title, .card-body {
+    color: #e0e0e0;
 }
 
-/* 9. FOOTER */
-section#footer {
-    background-color: #0d0d0d !important;
-    color: #aaa !important;
-    border-top: 1px solid #333 !important;
-}
-section#footer p, section#footer h1, section#footer h2 {
-    color: #fff !important;
+/* 3. Sivupalkki (Sidebar) */
+.menu-holder {
+    background-color: #1e1e1e;
 }
 
-/* 10. MISCELLANEOUS */
-a { color: #ffffff !important; }
-h1,h2,h3,h4,h5 { color: #fff !important; }
+.menu-holder .nav-item .nav-link {
+    color: #e0e0e0;
+}
 
-/* Optional: Add a small white bg to logo if it's transparent/black */
-.navbar-brand img {
-    background-color: white; 
-    border-radius: 4px;
-    padding: 2px;
+.menu-holder .nav-item .nav-link:hover,
+.menu-holder .nav-item.active .nav-link {
+    background-color: #333;
+    color: #fff;
+}
+
+/* 4. Lomakkeet ja syöttökentät */
+.form-control {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: #333;
+    border-color: #5bc0de;
+    color: #fff;
+}
+
+/* Dropdown valikot */
+.dropdown-menu {
+    background-color: #252525;
+    border: 1px solid #333;
+}
+
+.dropdown-item {
+    color: #e0e0e0;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #333;
+    color: #fff;
+}
+
+/* 5. Taulukot (Tables) */
+.table {
+    color: #e0e0e0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table td, .table th {
+    border-top: 1px solid #333;
+}
+
+/* 6. Header ja Navbar */
+header.header {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-main {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ccc;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+/* 7. Footer */
+footer.footer {
+    background-color: #1a1a1a;
+    color: #999;
+    border-top: 1px solid #333;
+}
+
+/* 8. Muut elementit (Alerts, Badges, Modals) */
+.alert-info {
+    background-color: #0c5460;
+    color: #d1ecf1;
+    border-color: #0c5460;
+}
+
+.alert-warning {
+    background-color: #584015;
+    color: #fff3cd;
+    border-color: #584015;
+}
+
+.alert-success {
+    background-color: #155724;
+    color: #d4edda;
+    border-color: #155724;
+}
+
+.alert-danger {
+    background-color: #721c24;
+    color: #f8d7da;
+    border-color: #721c24;
+}
+
+/* Modaalit */
+.modal-content {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+
+.modal-header, .modal-footer {
+    border-color: #333;
+}
+
+.close {
+    color: #fff;
+    text-shadow: none;
 }
