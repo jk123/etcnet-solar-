@@ -4,7 +4,7 @@
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <h1 class="display-4">Etcnet Solar</h1>
-                <h2 class="mb-4">Energiaa ja suorituskykyä pohjoisesta</h2>
+                <h2 class="mb-4">Energiaa ja suorituskykyä saaristosta</h2>
                 <p class="lead mb-5">
                     Luotettavat palvelut, lämmin asiakaspalvelu ja huippunopeat yhteydet.
                 </p>
