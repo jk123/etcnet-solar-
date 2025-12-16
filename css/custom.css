@@ -3,14 +3,14 @@
 /* 1. GENERAL SETTINGS & BACKGROUNDS */
 body, html, .main-content, section#main-body {
     background-color: #121212 !important;
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 
 /* 2. FORCE "WHITE" CONTENT BOXES TO DARK */
 /* Overwrites default white background classes used in promo blocks */
 .bg-white, .background-white, .whmcs-market-connect-promo, .content-block {
     background-color: #1e1e1e !important;
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 
 /* 3. HOMEPAGE DOMAIN SEARCH & BANNERS */
@@ -137,7 +137,7 @@ section#footer p, section#footer h1, section#footer h2 {
 }
 
 /* 10. MISCELLANEOUS */
-a { color: #000000 !important; }
+a { color: #ffffff !important; }
 h1,h2,h3,h4,h5 { color: #fff !important; }
 
 /* Optional: Add a small white bg to logo if it's transparent/black */
