@@ -1,1 +1,140 @@
+/* --- WHMCS TWENTY-ONE: DARK MODE FINAL FIX (v6) --- */
 
+/* 1. YLEISET JA TAUSTAT */
+body, html, .main-content, section#main-body {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* 2. PAKOTA "VALKOISET" LAATIKOT TUMMIKSI (Tämä korjaa kuvan 4 ongelman) */
+.bg-white, .background-white, .whmcs-market-connect-promo, .content-block {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+/* 3. ETUSIVUN DOMAIN-HAKU JA BANNERIT (Tämä korjaa kuvan 3 ongelman) */
+.domain-checker-bg, 
+section#home-banner, 
+div.home-content,
+.cms-content {
+    background-color: #121212 !important;
+    background-image: none !important;
+    background: #121212 !important;
+}
+
+/* 4. TAULUKOIDEN SIVUTUSNAPIT (Previous / Next) */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #444 !important;
+    border-radius: 4px !important;
+    margin-left: 4px;
+    padding: 6px 12px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #444 !important;
+    color: #fff !important;
+    border-color: #666 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #0056b3 !important;
+    color: #fff !important;
+    border-color: #0056b3 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+    background-color: #1a1a1a !important;
+    color: #444 !important;
+    border-color: #333 !important;
+}
+
+/* 5. HARMAA PALKKI (Breadcrumbs) */
+section#main-body header, 
+div.header-lined, 
+.breadcrumb {
+    background-color: #1f1f1f !important;
+    border-bottom: 1px solid #333 !important;
+    margin-bottom: 0 !important;
+}
+.breadcrumb-item, .breadcrumb-item a {
+    color: #bbb !important;
+}
+
+/* 6. YLÄPALKKI JA NAVIGAATIO */
+section#header, header, .navbar-main, .navbar-light {
+    background-color: #1f1f1f !important;
+    border-bottom: 1px solid #333 !important;
+}
+.navbar-light .navbar-nav .nav-link, 
+.navbar-light .navbar-brand {
+    color: #fff !important;
+}
+
+/* 7. TAULUKOT JA LISTAT */
+.table-container, .table-responsive {
+    background-color: #1e1e1e !important;
+    border: 1px solid #333 !important;
+}
+table.table {
+    background-color: #1e1e1e !important;
+    color: #ddd !important;
+}
+table.table thead th {
+    background-color: #252525 !important;
+    color: #fff !important;
+    border-bottom: 2px solid #444 !important;
+}
+table.table tbody td {
+    background-color: #1e1e1e !important;
+    color: #ccc !important;
+    border-top: 1px solid #333 !important;
+}
+table.dataTable tbody tr.odd, table.dataTable tbody tr.even {
+    background-color: #1e1e1e !important;
+}
+
+/* 8. KORTIT, TIILET JA LOMAKKEET */
+.card, .panel, .tile, .well {
+    background-color: #1e1e1e !important;
+    border: 1px solid #333 !important;
+}
+.card-header, .panel-heading {
+    background-color: #252525 !important;
+    color: #fff !important;
+    border-bottom: 1px solid #333 !important;
+}
+.card-body, .panel-body, .list-group-item {
+    background-color: #1e1e1e !important;
+    color: #ccc !important;
+    border-color: #333 !important;
+}
+.form-control, input, select {
+    background-color: #2d2d2d !important;
+    border: 1px solid #444 !important;
+    color: #fff !important;
+}
+/* Hakukenttä taulukon päällä */
+div.dataTables_wrapper .dataTables_filter input {
+    background-color: #2d2d2d !important;
+    color: #fff !important;
+    border: 1px solid #555 !important;
+}
+
+/* 9. ALAPALKKI */
+section#footer {
+    background-color: #0d0d0d !important;
+    color: #aaa !important;
+    border-top: 1px solid #333 !important;
+}
+section#footer p, section#footer h1, section#footer h2 {
+    color: #fff !important;
+}
+
+/* 10. MUUT */
+a { color: #5dade2 !important; }
+h1,h2,h3,h4,h5 { color: #fff !important; }
+/* Logolle tausta varmuuden vuoksi */
+.navbar-brand img {
+    background-color: white; 
+    border-radius: 4px;
+    padding: 2px;
+}
